@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Its a test website for learning the basic of html and css, the template from envato site was used as an example">
+        <title>Interstellar - New Sci-Fi world</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="head-desine">
+                <span class="logo image-size">
+                    <img src="images/logo/logoDetsoft.png"  alt="logoDetsoft">
+                    <span class="logo-name">Detsoft</span>
+                </span>
+        
+                <nav class="site-nav">
+                    <a href="#footer">Discover</a> 
+                    <a href="#story">Story</a>
+                    <a href="#character">Character</a> 
+                    <a href="#avariable-download">Download</a>
+                </nav>
+        
+                <button class="intro-button button-header" onclick="OpenForm()">Sign Up</button>
+
+                <article class="header-adaptive">
+                    <img src="images/nav-menu.svg" alt="">
+                    <div class="nav-menu">
+                        <nav class="site-nav-adaptive">
+                            <a href="#footer">Discover</a> 
+                            <a href="#story">Story</a>
+                            <a href="#character">Character</a> 
+                            <a href="#avariable-download">Download</a>
+                        </nav>
+                        <button class="intro-button button-header button-h-adaptive" onclick="OpenForm()">Sign Up</button>
+                    </div>
+                </article>
+               
+            </div>
+
+            <div id="form"></div>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <div class="name-game-intro">
+                <h1>
+                    Interstellar
+                </h1>
+            </div>
+
+            <div class="description">
+                <p>Unlocking The Secret Of The Universe:</p>
+                <p>Is A Distant Future, Humanity Discovers A Parallel Universe</p>
+            </div>
+          
+            <section class="link-to-download">
+                <button class="download-button intro-button" onclick="document.location='#avariable-download'">Download Now<i class="arrow"></i></button>
+                <button class="get-started-button intro-button" onclick="document.location='#story'"><div class="additional-border"></div>Get Started</button>
+                
+                <div class="avariable-download-intro">
+                    <p>
+                        Avariable Download
+                    </p>
+                    <ul>
+                        <li><img src="images/logo/random_logo-1.png" alt="logo">LogoName</li>
+                        <li><img src="images/logo/random_logo-2.png" alt="logo">LogoName</li>
+                        <li><img src="images/logo/random_logo-3.png" alt="logo">LogoName</li>
+                        <li><img src="images/logo/random_logo-4.png" alt="logo">LogoName</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <div class="info-game" id="story">
+                <section class="story">
+                    <article class="story-img image-size">
+                        <img src="images/planet/station.jpeg" alt="station">
+                        <img id="cb-story-top" src="images/custom_borders/border story - top.png" alt="border">
+                        <img id="cb-story-left" src="images/custom_borders/border story - left bottom.png" alt="border">
+                        <img id="cb-story-bottom" src="images/custom_borders/border story - left bottom.png" alt="border">
+                    </article>
+
+                    <article class="text-story">
+                        <h2>Story</h2>        
+                        <p>
+                           You get a message from your boss who notifies you of a new threat. 
+                           A terrorist organization known as Red Orbit plans to use an interplanetary
+                           machine to attack key objects in the Alpha Lira system. 
+                           <details class="text-story"> <summary>See More</summary>
+                              
+                           </details>
+                        </p>
+                    </article>
+                        
+                </section>
+
+                
+                <section class="any-world-to-explore">
+
+                    <h2>Any World To Explore</h2>
+
+                    <ul class="selection-world">
+                        <li class="images-world"  onclick="LoadWorld('alpha-1')">
+                            <p>Alpha-I</p>
+                            <img src="images/planet/dark landspace/previw_dark_lanspace.jpg" alt="Alpha-1">
+                        </li>
+
+                        <li class="images-world" onclick="LoadWorld('alpha-2')">
+                            <p>Alpha-II</p>
+                            <img src="images/planet/natural landspace/previw_natural_landspace.jpg" alt="Alpha-2">
+                        </li>
+
+                        <li class="images-world" onclick="LoadWorld('alpha-3')">
+                            <p>Alpha-III</p>
+                            <img src="images/planet/sandy landspace/previw_sandy_landspace.jpg" alt="Alpha-3">
+                        </li>
+                        
+                        <li class="images-world" onclick="LoadWorld('alpha-4')">
+                            <p>Alpha-IV</p>
+                            <img src="images/planet/snowy landspace/previw_snowy_landspace.jpg" alt="Alpha-4">
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="previw-world">
+
+                    <h2>Previw World</h2>
+                    
+                    <section class="main-image main-location">
+                        <button class="left-button-to-swap" onclick="GoNextImage(-1)"><div class="arrow-to-swap"></div></button>
+                        <img src="" alt="main-landspace" indexLocation=""> 
+                        <article class="text-to-image">
+                            <h2></h2>
+                            <p></p>
+                        </article>
+                        <button class="right-button-to-swap" onclick="GoNextImage(1)"><div class="arrow-to-swap"></div></button>
+                    </section>
+
+                    <section class="list-location">
+
+                        <ul class="alpha-1 list-selected location">
+                            <li onclick="OpenSelectedBlock(0, 'previw-world')">
+                                <img src="images/planet/dark landspace/aljer-frozen-planet-10s.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #0441</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li> 
+
+                            <li onclick="OpenSelectedBlock(1, 'previw-world')">
+                                <img src="images/planet/dark landspace/artist-alex-figini-30.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #0350</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+
+                            <li onclick="OpenSelectedBlock(2, 'previw-world')">
+                                <img src="images/planet/dark landspace/oasis_by_rulez_dmitriy-d90jnpy.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #0012</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+
+                            <li onclick="OpenSelectedBlock(3, 'previw-world')">
+                                <img src="images/planet/dark landspace/17b616081d21deedb4fc17513a0de99a.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #0077</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <ul class="alpha-2 list-selected location">
+                            <li onclick="OpenSelectedBlock(4, 'previw-world')">
+                                <img src="images/planet/natural landspace/834656-fantasy-art-backgrounds-1920x1200-notebook.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #1541</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li> 
+
+                            <li onclick="OpenSelectedBlock(5, 'previw-world')">
+                                <img src="images/planet/natural landspace/eduardo-pena-3.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #1550</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+
+                            <li onclick="OpenSelectedBlock(6, 'previw-world')">
+                                <img src="images/planet/natural landspace/maxresdefault.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #1012</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+
+                            <li onclick="OpenSelectedBlock(7, 'previw-world')">
+                                <img src="images/planet/natural landspace/mining station.JPG" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #1003</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <ul class="alpha-3 list-selected location">
+                            <li onclick="OpenSelectedBlock(8, 'previw-world')">
+                                <img src="images/planet/sandy landspace/1107862-landscape-planet-sand-artwork-desert-dragon-mythology-Terrain-screenshot-computer-wallpaper-pc-game.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #2222</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li> 
+
+                            <li onclick="OpenSelectedBlock(9, 'previw-world')">
+                                <img src="images/planet/sandy landspace/constantine-marin-oldworld2.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #2800</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+
+                            <li onclick="OpenSelectedBlock(10, 'previw-world')">
+                                <img src="images/planet/sandy landspace/space_wreck_by_tatonkus-d5kswh6.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #2611</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+
+                            <li onclick="OpenSelectedBlock(11, 'previw-world')">
+                                <img src="images/planet/sandy landspace/taehwan-yoo-04.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #2499</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <ul class="alpha-4 list-selected location">
+                            <li onclick="OpenSelectedBlock(12, 'previw-world')">
+                                <img src="images/planet/snowy landspace/9f75202eac72f35673b9115a3c27b61f.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #8988</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li> 
+
+                            <li onclick="OpenSelectedBlock(13, 'previw-world')">
+                                <img src="images/planet/snowy landspace/d8cb10347dbcf577f9c2c1e23d346506.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #8001</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+
+                            <li onclick="OpenSelectedBlock(14, 'previw-world')">
+                                <img src="images/planet/snowy landspace/mariusz-krzywicki-1.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #8102</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+
+                            <li onclick="OpenSelectedBlock(15, 'previw-world')">
+                                <img src="images/planet/snowy landspace/R.jpg" alt="landspace">
+                                <div class="text-to-select" style="display: none;">
+                                    <h2>location #8303</h2>
+                                    <p>Description for this location</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <section class="text-to-image adaptive-tmi">
+                        <h2></h2>
+                        <p></p>
+                    </section>
+
+                </section>
+                
+                <section class="character-info" id="character">
+                    <ul class="list-selected list-character adaptive-list-ch">
+                        <li class="character" onclick="OpenSelectedBlock(0, 'character-info')">
+                            <img src="images/character/character-1.jpg" alt="character">
+                            <div class="text-to-select" style="display: none;">
+                                <h3 class="name-character">Name character-1</h3>
+                                <p class="text-to-character">AAA AA A AA A AAAA AAAA AA AA AAA A a a</p>
+                            </div>
+                        </li>
+
+                        <li class="character" onclick="OpenSelectedBlock(1, 'character-info')">
+                            <img src="images/character/character-2.jpg" alt="character">
+                            <div class="text-to-select" style="display: none;">
+                                <h3 class="name-character">Name character-2</h3>
+                                <p class="text-to-character">BBB BB B BB BBBB BBB BB B BBB BB BB B</p>
+                            </div>
+                        </li>
+
+                        <li class="character" onclick="OpenSelectedBlock(2, 'character-info')">
+                            <img src="images/character/character-3.jpg" alt="character">
+                            <div class="text-to-select" style="display: none;">
+                                <h3 class="name-character">Name character-3</h3>
+                                <p class="text-to-character">CCC CCC CCC CCCC CCCC CCC CC CC CCC CC</p>
+                            </div>
+                        </li>
+
+                        <li class="character" onclick="OpenSelectedBlock(3, 'character-info')">
+                            <img src="images/character/character-4.jpg" alt="character">
+                            <div class="text-to-select" style="display: none;">
+                                <h3 class="name-character">Name character-4</h3>
+                                <p class="text-to-character">DDD DD DD DDDD DDDD DDDD DDDD DDD DD D</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <section class="main-image main-character">
+                        <img src="images/character/character-1.jpg" alt="">
+                        <img id="cb-character" src="images/custom_borders/border2.png" alt="border">
+                    </section>
+
+                    <section class="descrition-and-selection-character">
+                        <article class="text-to-image">
+                            <h3 class="name-character"></h3>
+                            <p class="text-to-character"></p>
+                        </article>
+
+                        <ul class="list-selected list-character">
+                            <li class="character" onclick="OpenSelectedBlock(0, 'character-info')">
+                                <img src="images/character/character-1.jpg" alt="character">
+                            </li>
+
+                            <li class="character" onclick="OpenSelectedBlock(1, 'character-info')">
+                                <img src="images/character/character-2.jpg" alt="character">
+                            </li>
+
+                            <li class="character" onclick="OpenSelectedBlock(2, 'character-info')">
+                                <img src="images/character/character-3.jpg" alt="character">
+                            </li>
+
+                            <li class="character" onclick="OpenSelectedBlock(3, 'character-info')">
+                                <img src="images/character/character-4.jpg" alt="character">
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                
+                <section class="trailer-block">
+                    <section class="trailer-text">
+                        <h2>Official Trailer</h2>
+                        <p>
+                            Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text
+                        </p>
+                    </section>
+
+                    <section class="trailer-video">
+                        <img id="cb-trailer" src="images/custom_borders/border3.png" alt="border">
+                        <div class="corner-trailer"></div>
+                        <iframe src="https://www.youtube.com/embed/BB87nZ2Wldg" title="S.T.A.L.K.E.R. 2: Сердце Чернобыля — Официальный трейлер Иди ко Мне" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </section>
+
+                    <section class="trailer-text adaptive-trl-text">
+                        <h2>Official Trailer</h2>
+                        <p>
+                            Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text
+                        </p>
+                    </section>
+                </section>
+                <section class="avariable-download" id="avariable-download">
+                    <h2>Avariable Download</h2>
+
+                    <ul>
+                        <li><a href="https://www.google.com"><img src="images/logo/random_logo-1.png" alt="logo"></a></li>
+                        <li class="invert-color"><a href="https://www.google.com"><img src="images/logo/random_logo-2.png" alt="logo"></a></li>
+                        <li><a href="https://www.google.com"><img src="images/logo/random_logo-3.png" alt="logo"></a></li>
+                        <li><a href="https://www.google.com"><img src="images/logo/random_logo-4.png" alt="logo"></a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="content-footer">
+            <div class="grid-footer">
+                <article class="game-studio-and-product">
+                    <section class="logo logo-footer">
+                        <img src="images/logo/logoDetsoft.png"  alt="logoDetsoft">
+                        <span class="logo-name">Detsoft</span>
+                    </section>
+
+                    <section class="name-game-footer">
+                        <h3>Interstellar</h3>
+                    </section>
+                </article>
+                
+                <article class="copyright-claim">
+                    <span>&copy;</span> <span>Copyright 2023 Detsoft All Right Reversed</span>
+                </article>
+
+                <article class="FAQ-link">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Work with us</a>
+                    <a href="">Teams of Service</a>
+                </article>
+                
+                <article class="social-media-icon invert-color">
+                    <ul>
+                        <li><a href="https://www.instagram.com"><img src="images/icon_social_media/instagram_icon.png" alt="instagram_icon"></a></li>
+                        <li><a href="https://twitter.com"><img src="images/icon_social_media/twitter_icon.png" alt="twitter_icon"></a></li>
+                        <li><a href="https://www.youtube.com"><img src="images/icon_social_media/youtube_icon.png" alt="youtube_icon"></a></li>
+                        <li><a href="https://www.twitch.tv"><img src="images/icon_social_media/twich_icon.png" alt="twich_icon"></a></li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/babel">
+        class FormSignUp extends React.Component{
+
+            CloseForm() {
+                let form = document.getElementById("form");
+                form.style.display = "none";
+            }
+
+
+            render(){
+                return (<section class="form">
+                            <button class="close-form" onClick={() => this.CloseForm()}>&#10006;</button>
+                            <h1>Sign up</h1>
+                            <form action="">
+                                <p><input type="text" name="login" required placeholder="Login" size="30" maxlength="25"/></p>
+                                <p><input type="password" name="password" required placeholder="Password" size="30" maxlength="25"/></p>
+                                <p>
+                                    <button type="submit">Sign up</button>
+                                </p>
+                            </form>
+                        </section>);
+            }
+        }
+
+        
+        ReactDOM
+            .createRoot(
+                document.getElementById("form")
+            )
+            .render(
+                <FormSignUp />
+            );
+    </script>
+</body>
+</html>
